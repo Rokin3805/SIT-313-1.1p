@@ -1,0 +1,161 @@
+#banner 
+{
+      background-color: #f2f2f2;
+      padding: 10px;
+}
+    
+.button 
+{
+  display: inline-block;
+  margin-right: 25px;
+  padding: 10px;
+  background-color: teal;
+  color: white;
+  border-radius: 3px;
+}
+
+#imgSection 
+{
+  text-align: center;
+  position: relative; 
+  display: inline-block; 
+}
+
+#bannerImage 
+{
+  width: 100vw;
+  height: 150px;
+}
+
+
+.overlay 
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#imgSection:hover .overlay 
+{
+  opacity: 1;
+}
+
+#profileSection 
+{
+  text-align: center;
+  margin-top: 30px;
+}
+
+.content 
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#profileImage 
+{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.mainText 
+{
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.divider 
+{
+  width: 40%;
+  border: none;
+  border-top: 2px solid #ccc;
+}
+
+.subText 
+{
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 30px;
+  text-align:center;
+}
+
+
+#projectSection 
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.projectItem 
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.projectImage 
+{
+  width: 150px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.projectText 
+{
+  text-align: left;
+}
+
+
+.responsive 
+{
+  width: 100%;
+  height: auto;
+}
+
+#gallery 
+{
+  text-align: center;
+  margin-top: 30px;
+}
+
+.galleryImages {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.galleryImage {
+  width: 20%;
+  margin-bottom: 20px;
+}
+
+/*had issues with W3 schools method, used method taught in responsive web apps */
+@media (max-width: 768px) 
+{
+  .galleryImages 
+  {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .galleryImage 
+  {
+    width: 100%; 
+  }
+}
